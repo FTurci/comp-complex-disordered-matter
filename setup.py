@@ -9,7 +9,7 @@ class build_ext_custom(build_ext):
         subprocess.check_call(["emcc", "compdismatter/wasm/ising.c", "-s", "SIDE_MODULE=2", "-O3", "-o", "compdismatter/wasm/ising.wasm"])
         
         # Compile the shared object (.so) for native use
-        subprocess.check_call(["gcc", "-shared", "-o", "compdismatter/lib/ising.so", "compdismatter/wasm/ising.c"])
+        # subprocess.check_call(["gcc", "-shared", "-o", "compdismatter/lib/ising.so", "compdismatter/wasm/ising.c"])
 
         # Proceed with the default build process
         super().run()
