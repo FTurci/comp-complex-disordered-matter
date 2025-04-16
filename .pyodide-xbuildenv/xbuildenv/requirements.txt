@@ -1,4 +1,0 @@
-cffi==1.15.1
-numpy==1.26.4
-pycparser==2.22
-scipy==1.11.2
